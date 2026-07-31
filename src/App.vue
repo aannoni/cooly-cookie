@@ -1,12 +1,26 @@
-<script setup></script>
+<script setup>
+  import Sidebar from './layouts/Sidebar.vue'
+
+  const product = 'cookie'
+  const isWorking = true
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <el-button type="primary">You did it!</el-button>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="layout">
+    <Sidebar />
+    <main class="content">
+      <router-view />
+    </main>
+  </div>
+
 </template>
 
-<style scoped></style>
+<style scoped>
+  .layout {
+  display: flex;
+  }
+  .content {
+    flex: 1;
+  }
+
+</style>
