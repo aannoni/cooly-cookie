@@ -8,7 +8,10 @@
   <h3></h3>
   <p>{{ isBaking ? 'YES' : 'NO' }}</p>
 
-  <el-button>{{ isLoggedIn ? 'Yes you are logged in. Please log out' : 'Log in' }}</el-button>
+  <div style="display: inline-flex; flex-direction: column; gap: 10px;">
+    <el-button>{{ isLoggedIn ? 'Yes you are logged in. Please log out' : 'Log in' }}</el-button>
+    <el-tag>{{ count === 1 ? 'count is one' : 'count is more than one' }}</el-tag>
+  </div>
 
 </template>
 
@@ -17,6 +20,7 @@
   const isBaking = true
   
   const isLoggedIn = false
+  const count = 2
   
 </script>
 
