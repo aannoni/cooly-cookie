@@ -1,6 +1,5 @@
 <template>
   <h1>Expressions</h1>
-  <div class="brain-hack">VALUE & YES/NO</div>
   <h3>Vue.js expresses the value of a variable within curly brackets.</h3>
   {{ product }}
   {{ product + 's' }}
@@ -26,9 +25,5 @@
 </script>
 
 <style scoped>
-.brain-hack {
-  font-size: 48px;
-  
-}
 
 </style>

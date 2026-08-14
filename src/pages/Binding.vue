@@ -17,16 +17,24 @@
     <el-button v-bind:disabled="cookiesSoldOut">Buy a cookie</el-button>
   </div>
 
-  <div class="tagStyling">
+  <div class="spacing">
     <!-- bind boolean attribute to tag -->
+    <h3>bind boolean attribute to tag</h3>
     <el-tag v-bind:closable="showClose">Favourite</el-tag>
     <el-tag v-bind:hit="highlightBorder">Favourite</el-tag>
     <el-tag v-bind:round="isRound">Favourite</el-tag>
 
     <!-- bind enum attribute to tag -->
+    <h3>bind enum attribute to tag</h3>
     <el-tag v-bind:type="isSuccess">Successful</el-tag>
     <el-tag v-bind:size="isLarge">Successful</el-tag>
     <el-tag v-bind:effect="isDark">Successful</el-tag>
+  </div>
+
+  <div class="spacing">
+    <h3>bind styling to tag with true/false</h3>
+    <el-button v-bind:class="{ favourite: isActive }">is Favourite</el-button>
+    <el-button v-bind:class="{ favourite: cookiesSoldOut }">is Favourite</el-button>
   </div>
 </template>
 
@@ -39,10 +47,13 @@
   const highlightBorder = true
   const isRound = true
 
+  // can bind enum attribute to tag
   const isSuccess = 'success'
   const isLarge = 'large'
   const isDark = 'dark'
 
+  // bind styling to tag with true/false
+  const isActive = true
 </script>
 
 <style scoped>
@@ -50,8 +61,8 @@
     margin-bottom: 80px;
   }
 
- .tagStyling {
-    display: flex;
- } 
-  
+  .favourite {
+    background-color: gold;
+  }
+
 </style>
