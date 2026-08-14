@@ -6,7 +6,13 @@
     <el-menu-item index="/">Home</el-menu-item>
     <el-menu-item index="/expressions">Expressions</el-menu-item>
     <el-menu-item index="/binding">Binding</el-menu-item>
-    <el-menu-item index="/directives">Directives</el-menu-item>
+    <el-sub-menu index="directives">
+      <template #title>Directives</template>
+      <el-menu-item index="/directives/v-if">v-if (this or that)</el-menu-item>
+      <el-menu-item index="/directives/v-else-if">v-else-if (this or that or that)</el-menu-item>
+      <el-menu-item index="/directives/v-show">v-show</el-menu-item>
+      <el-menu-item index="/directives/v-model">v-model</el-menu-item>
+    </el-sub-menu>
     <el-menu-item index="/memory-hooks">Memory hooks</el-menu-item>
   </el-menu>
 </template>

@@ -4,6 +4,10 @@ import Expressions from '../pages/Expressions.vue'
 import Binding from '../pages/Binding.vue'
 import Directives from '../pages/Directives.vue'
 import MemoryHooks from '../pages/MemoryHooks.vue'
+import VIf from '../pages/directives/VIf.vue'
+import VElseIf from '../pages/directives/VElseIf.vue'
+import VShow from '../pages/directives/VShow.vue'
+import VModel from '../pages/directives/VModel.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,6 +16,10 @@ const router = createRouter({
     { path: '/expressions', name: 'expressions', component: Expressions },
     { path: '/binding', name: 'binding', component: Binding },
     { path: '/directives', name: 'directives', component: Directives },
+    { path: '/directives/v-if', name: 'v-if', component: VIf },
+    { path: '/directives/v-else-if', name: 'v-else-if', component: VElseIf },
+    { path: '/directives/v-show', name: 'v-show', component: VShow },
+    { path: '/directives/v-model', name: 'v-model', component: VModel },
     { path: '/memory-hooks', name: 'memory-hooks', component: MemoryHooks },
   ],
 })
