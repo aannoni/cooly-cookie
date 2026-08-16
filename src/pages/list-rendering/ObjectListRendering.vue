@@ -1,7 +1,7 @@
 <template>
   <div class="spacing">
     <h2>Object List Rendering</h2>
-    <h3>use v-for="(value, key) in object" to loop over an object's properties</h3>
+    <h3>list through an object with key(name) and value(information)</h3>
   </div>
 
   <div class="spacing">

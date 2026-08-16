@@ -4,6 +4,7 @@ import Expressions from '../pages/Expressions.vue'
 import Binding from '../pages/Binding.vue'
 import ListRendering from '../pages/ListRendering.vue'
 import ObjectListRendering from '../pages/list-rendering/ObjectListRendering.vue'
+import BuildCustomComponentWhileRendering from '../pages/list-rendering/BuildCustomComponentWhileRendering.vue'
 import Directives from '../pages/Directives.vue'
 import MemoryHooks from '../pages/MemoryHooks.vue'
 import VIf from '../pages/directives/VIf.vue'
@@ -19,6 +20,7 @@ const router = createRouter({
     { path: '/binding', name: 'binding', component: Binding },
     { path: '/list-rendering', name: 'list-rendering', component: ListRendering },
     { path: '/list-rendering/object-list-rendering', name: 'object-list-rendering', component: ObjectListRendering },
+    { path: '/list-rendering/build-custom-component-while-rendering', name: 'build-custom-component-while-rendering', component: BuildCustomComponentWhileRendering },
     { path: '/directives', name: 'directives', component: Directives },
     { path: '/directives/v-if', name: 'v-if', component: VIf },
     { path: '/directives/v-else-if', name: 'v-else-if', component: VElseIf },

@@ -17,6 +17,7 @@
       <template #title>List rendering</template>
       <el-menu-item index="/list-rendering">List rendering</el-menu-item>
       <el-menu-item index="/list-rendering/object-list-rendering">Object list rendering</el-menu-item>
+      <el-menu-item index="/list-rendering/build-custom-component-while-rendering">Build custom component while rendering</el-menu-item>
     </el-sub-menu>
     <el-menu-item index="/memory-hooks">Memory hooks</el-menu-item>
   </el-menu>
