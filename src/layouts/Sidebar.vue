@@ -13,6 +13,11 @@
       <el-menu-item index="/directives/v-show">v-show</el-menu-item>
       <el-menu-item index="/directives/v-model">v-model</el-menu-item>
     </el-sub-menu>
+    <el-sub-menu index="list-rendering">
+      <template #title>List rendering</template>
+      <el-menu-item index="/list-rendering">List rendering</el-menu-item>
+      <el-menu-item index="/list-rendering/object-list-rendering">Object list rendering</el-menu-item>
+    </el-sub-menu>
     <el-menu-item index="/memory-hooks">Memory hooks</el-menu-item>
   </el-menu>
 </template>

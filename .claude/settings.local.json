@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\alex\\\\projects\\\\cooly-cookie\\\\src\" -iname \"*.js\" -path \"*router*\" -o -iname \"*sidebar*\" -o -iname \"*menu*\" -o -iname \"*nav*\")"
+    ]
+  }
+}

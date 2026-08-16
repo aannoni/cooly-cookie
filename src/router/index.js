@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../pages/Home.vue'
 import Expressions from '../pages/Expressions.vue'
 import Binding from '../pages/Binding.vue'
+import ListRendering from '../pages/ListRendering.vue'
+import ObjectListRendering from '../pages/list-rendering/ObjectListRendering.vue'
 import Directives from '../pages/Directives.vue'
 import MemoryHooks from '../pages/MemoryHooks.vue'
 import VIf from '../pages/directives/VIf.vue'
@@ -15,6 +17,8 @@ const router = createRouter({
     { path: '/', name: 'home', component: Home },
     { path: '/expressions', name: 'expressions', component: Expressions },
     { path: '/binding', name: 'binding', component: Binding },
+    { path: '/list-rendering', name: 'list-rendering', component: ListRendering },
+    { path: '/list-rendering/object-list-rendering', name: 'object-list-rendering', component: ObjectListRendering },
     { path: '/directives', name: 'directives', component: Directives },
     { path: '/directives/v-if', name: 'v-if', component: VIf },
     { path: '/directives/v-else-if', name: 'v-else-if', component: VElseIf },
