@@ -1,7 +1,7 @@
 <template>
   <h1>Training</h1>
   
-  {{ Math.ceil(price) }}
+  {{ Math.ceil(cost) }}
 
   <p v-if="isBaking === true">{{ productName }}</p>
   <p v-else>Not baking right now</p>
@@ -13,10 +13,18 @@
 
   <el-button v-bind:disabled="isSoldOut">Buy a cookie</el-button>
   <el-button v-show="showFBtn === true" v-bind:class="{ favouriteStyling: isFavourite }">Buy your favourite cookie</el-button>
+
+  <ul>
+    <li v-for="product in products">{{ product.name }} | {{ product.price }} | {{ product.inStock }}</li>
+  </ul>
+
+  <ul>
+    <li v-for="value in special">{{ value }}</li>
+  </ul>
 </template>
 
 <script setup>
-  const price = 3.5
+  const cost = 3.5
 
   const isBaking = true
   const productName = 'Cookie'
@@ -27,6 +35,20 @@
 
   const isFavourite = true
   const showFBtn = true
+
+  const products = [
+    { name: 'Chocolate Chip', price: 3.5, inStock: true },
+    { name: 'Oatmeal', price: 2.75, inStock: false },
+    { name: 'Snickerdoodle', price: 4.0, inStock: true },
+  ]
+
+  const special = {
+    // key: value
+    name: 'Christmas cookie',
+    price: 8.5,
+    inStock: true
+  }
+
 </script>
 
 <style scoped>
