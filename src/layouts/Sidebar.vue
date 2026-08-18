@@ -21,6 +21,7 @@
     </el-sub-menu>
     <el-menu-item index="/memory-hooks">Memory hooks</el-menu-item>
     <el-menu-item index="/training">Training</el-menu-item>
+    <el-menu-item index="/events">Events</el-menu-item>
   </el-menu>
 </template>
 

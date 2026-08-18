@@ -15,7 +15,12 @@
   <el-button v-show="showFBtn === true" v-bind:class="{ favouriteStyling: isFavourite }">Buy your favourite cookie</el-button>
 
   <ul>
-    <li v-for="product in products">{{ product.name }} | {{ product.price }} | {{ product.inStock }}</li>
+    <li v-for="product in products" v-bind:key="product">{{ product.name }} | {{ product.price }} | {{ product.inStock }}</li>
+    <li v-for="product in products" v-bind:key="product.name">{{ product.name }} | {{ product.price }}
+      <span v-if="product.inStock === true">In Stock</span>
+      <span v-else>Sold Out</span>
+      <el-button v-bind:disabled="product.inStock === false">Add to cart</el-button>
+    </li>
   </ul>
 
   <ul>
