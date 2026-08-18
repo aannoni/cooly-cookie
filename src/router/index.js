@@ -7,6 +7,7 @@ import ObjectListRendering from '../pages/list-rendering/ObjectListRendering.vue
 import BuildCustomComponentWhileRendering from '../pages/list-rendering/BuildCustomComponentWhileRendering.vue'
 import Directives from '../pages/Directives.vue'
 import MemoryHooks from '../pages/MemoryHooks.vue'
+import Training from '../pages/Training.vue'
 import VIf from '../pages/directives/VIf.vue'
 import VElseIf from '../pages/directives/VElseIf.vue'
 import VShow from '../pages/directives/VShow.vue'
@@ -27,6 +28,7 @@ const router = createRouter({
     { path: '/directives/v-show', name: 'v-show', component: VShow },
     { path: '/directives/v-model', name: 'v-model', component: VModel },
     { path: '/memory-hooks', name: 'memory-hooks', component: MemoryHooks },
+    { path: '/training', name: 'training', component: Training },
   ],
 })
 
