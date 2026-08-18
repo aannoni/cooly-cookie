@@ -19,9 +19,10 @@
       <el-menu-item index="/list-rendering/object-list-rendering">Object list rendering</el-menu-item>
       <el-menu-item index="/list-rendering/build-custom-component-while-rendering">Build custom component while rendering</el-menu-item>
     </el-sub-menu>
+    <el-menu-item index="/functions">Functions</el-menu-item>
+    <el-menu-item index="/events">Events</el-menu-item>
     <el-menu-item index="/memory-hooks">Memory hooks</el-menu-item>
     <el-menu-item index="/training">Training</el-menu-item>
-    <el-menu-item index="/events">Events</el-menu-item>
   </el-menu>
 </template>
 

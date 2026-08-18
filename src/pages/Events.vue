@@ -3,12 +3,12 @@
   <h4>Events is what is happening in the browser (click, press, submit, hover)</h4>
   <h4>then vue says 'do this' which is called an action</h4>
 
-  <el-button v-on:click="sayHello"></el-button>
+  <el-button v-on:click="sayHello('Alex')">Press to say hello</el-button>
 </template>
 
 <script setup>
-  const sayHello = () => {
-    console.log('Hello')
+  const sayHello = (name) => {
+    console.log('Hello' + name)
   }
 </script>
 
