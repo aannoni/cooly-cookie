@@ -1,17 +1,39 @@
 <template>
   <h1>Functions</h1>
+  <ul>
+    <li>function name</li>
+    <li>what it does (return, console log)</li>
+    <li>call or use it and give it params</li>
+    <li>add params to function and what it does</li>
+  </ul>
 
-  <el-button
-    v-on:click="() => console.log(add(4, 5))"
-  >Log</el-button>
 </template>
 
 <script setup>
-  const add = (a, b) => {
-    return a + b
+  const sayHi = (name) => {
+    console.log('Hi' + name)
   }
+  sayHi('Alex')
 
-  console.log(add(2,3))
+  const add = (a, b) => {
+    return (a+b)
+  }
+  console.log(add(2, 3))
+
+  const subtract = (c,d) => {
+    return(c-d)
+  }
+  console.log(subtract(5,3))
+
+  const checkAge = (e) => {
+    if (e >= 18) {
+      return 'adult'
+    }
+    else {
+      return 'minor'
+    }
+  }
+  console.log(checkAge(20))
 </script>
 
 <style scoped>

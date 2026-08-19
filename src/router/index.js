@@ -9,6 +9,7 @@ import Directives from '../pages/Directives.vue'
 import MemoryHooks from '../pages/MemoryHooks.vue'
 import Training from '../pages/Training.vue'
 import Functions from '../pages/Functions.vue'
+import FunctionsAndArrays from '../pages/functions/FunctionsAndArrays.vue'
 import Events from '../pages/Events.vue'
 import VIf from '../pages/directives/VIf.vue'
 import VElseIf from '../pages/directives/VElseIf.vue'
@@ -32,6 +33,7 @@ const router = createRouter({
     { path: '/memory-hooks', name: 'memory-hooks', component: MemoryHooks },
     { path: '/training', name: 'training', component: Training },
     { path: '/functions', name: 'functions', component: Functions },
+    { path: '/functions/functions-and-arrays', name: 'functions-and-arrays', component: FunctionsAndArrays },
     { path: '/events', name: 'events', component: Events },
   ],
 })
